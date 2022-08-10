@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+    <script>
+        // let rev = 0;
+        // let no = parseInt(prompt("Enter number"));
+        // let last;
+        // while(no != 0)
+        // {
+        //     last = no%10;
+        //     rev = rev * 10 + last;
+        //     no = no/10;
+
+        // }
+        // console.log("reverse number"+rev);
+        let e, x, d = 0;
+        let b = prompt("Enter Number");
+        x=b;
+        while(x>0)
+        {
+            e = x % 10;
+            x = parseInt(x/10);
+            d = d + (e*e*e);
+
+        }
+        if(b==d)
+        {
+            alert("number is amstrong");
+
+        }
+        else
+        {
+            alert("number is not amstrong");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

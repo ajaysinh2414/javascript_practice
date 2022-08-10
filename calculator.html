@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script>
+        let op = prompt("enter your operation (either +,-,*,/)");
+        let no1 =parseFloat(prompt("enter first number : "));
+        let no2 =parseFloat(prompt("enter second number : "));
+        console.log("your first number is ="+no1);
+        console.log("your second number is ="+no2);
+        if(op== '+')
+        {
+            result = no1 + no2;
+        }
+        else if(op== '-')
+        {
+            result = no1 - no2;
+        }
+        else if(op== '*')
+        {
+            result = no1 * no2;
+        }
+        else if(op == '/')
+        {
+            result = no1 / no2;
+        }
+        else
+        {
+            console.log("ERROR");
+        }
+        console.log("your result is = "+result);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

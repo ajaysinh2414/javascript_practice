@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendance</title>
+    <script>
+         let PresentDay = parseInt(prompt("enter present Day:"));
+        let attendance = (PresentDay*100)/180;
+        if(PresentDay>=180)
+        {
+            let msg = alert("Not valid input..");
+        }
+        else if(attendance>=75)
+        {
+            console.log("you allowed to sit exam");
+            console.log("your total present day in semster:"+PresentDay);
+            console.log("your percentage of attendance is:"+attendance);
+        }
+        else
+        {
+            let med = prompt("do your medical issue y / n ?");
+            if(med="n") 
+           {
+               console.log("oops sorry you can not sit exam");
+           }
+            else if(med="y")
+           {
+               console.log("plz submit document in college after allow to sit !");
+               console.log("your total present day in semster:"+PresentDay);
+               console.log("your percentage of attendance is:"+attendance);
+           }
+           
+           
+        
+        }
+        // else{
+        //     // let yes = parseInt(prompt("do your have medical issue ?"));
+        //     // console.log("you can able to give exam plz contact collage !!");
+        //     // let
+        //     // if(attendance<=75)
+        //     // {
+        //     //   let medical = (alert("do your have any medical issue ?")); 
+        //     //   console.log("contact your collage !");  
+        //     // }
+        //     // else
+        //     // {
+        //       //  console.log("oops !! Not allowed to sit");
+        //     // }
+           
+        // }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

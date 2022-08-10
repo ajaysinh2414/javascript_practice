@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade</title>
+    <script>
+        let sub1 = parseInt(prompt("enter maths mark:"));
+        let sub2 = parseInt(prompt("enter science  mark:"));
+        let sub3 = parseInt(prompt("enter english mark:"));
+        let sub4 = parseInt(prompt("enter social mark:"));
+        let sub5 = parseInt(prompt("enter sankrit mark:"));
+        let sub6 = parseInt(prompt("enter gujarati mark:"));
+        let total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6;
+        console.log("your total is :"+total);
+        let percentage = total*100/600;
+        console.log("your percentage is:"+percentage);
+        if(percentage>=70)
+        {
+                console.log("A grade");
+        }
+        else if(percentage>=60)
+        {
+            console.log("B grade");
+        }
+        else if(percentage>=50)
+        {
+              console.log("C grade");
+        }
+        else if(percentage>=40){
+            console.log("D grade");
+        }
+        else{
+            console.log("FAIL");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

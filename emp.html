@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+    <script>
+        let age =parseInt(prompt("Enter Your Age :"));
+        let gender =prompt("Enter Your Gender m/f:");
+        console.log("Gender is :"+gender);
+        if(gender = "f")
+        {
+            console.log("only work in urban area ");
+        }
+        else if((gender = "m") || (age>=20 && age<=40))
+        {
+            console.log("work any area");
+        }
+        else if((gender = "m") || (age>=40 && age<=60))
+        {
+            console.log("work only urban area");
+        }
+        else if((gender!="m" && gender!="f") || (age<20 && age>60))
+        {
+            console.log("ERROR");
+        }
+        
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
