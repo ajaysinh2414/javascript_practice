@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document object model</title>
+    <h1 id="t1">Hello world !</h1>
+    <h2 id="t2">hello india </h2>
+    <h3 id="t3"> this for demo </h3>
+    <!-- <script>
+        let h1 = document.getElementById("t1");
+        h1.innerHTML = "<i><font color='red'>how are uhh all</i>";
+        // console.log(h1);
+        let h2 = document.getElementById("t2");
+        h2.innerText = "hello guys !!";
+
+        let h3 = document.getElementById("t3");
+        h3.innerHTML = "<i>this is demo</i>";
+
+        let li1 = document.getElementById("f1");
+       // console.log(li1);
+        li1.innerHTML = "<p>hello</p>"; 
+     </script> -->
+        <style>
+            body{
+                color: red;
+                font-style: italic;
+                font-size: larger;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: black;
+            }
+
+        </style>
+</head>
+<body align="center">
+    <ul align="center">
+    <li id="f1"> first 1 </li>
+    <li id="f2"> second 2</li>
+    <li id="f3"> third 3 </li>
+    </ul>
+    <script>
+        let li1 = document.getElementById("f1");
+        console.log(li1);
+        li1.innerHTML = `<input type="checkbox" id="ckb1" value="bike" checked>
+                        <label> i have splender</label>`;
+                        
+        let li2 = document.getElementById("f2");
+        console.log(li2);
+        li2.innerHTML =`<input type="checkbox" id="ckb2" value="car">
+                        <label> i have car</label>`;
+
+        let li3 = document.getElementById("f3");
+        console.log(li3);
+        li3.innerHTML=`<input type="checkbox" id="ckb3" value="cycle">
+                        <label> i have cycle</label>`
+    </script>
+    
+</body>
+</html>

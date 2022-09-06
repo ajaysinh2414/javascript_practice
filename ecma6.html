@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA 6</title>
+    <script>
+        // no return & no argument
+        let say = () =>{
+            console.log("hello world");
+        }
+        say();
+
+        // with return & with argument
+        let name = prompt("Enter Your Name ");
+        let dg = prompt("Enter Your Degree");
+        let ask = prompt("are you in Sem or not ?");
+
+        let study = (name,dg,ask) =>{
+            if(ask == "not")
+            {
+                let grade = prompt("Enter Grade :");
+                return ("My Name is:" +name+" And Currenty Im Study:" +dg+ " completed with Grade is :"+grade); 
+            }
+            else if(ask == "sem")
+            {
+                let sem = prompt("Enter Your Semester :");
+                return ("My Name is:" +name+" And Currenty Im Study:" +dg+ " semester:" +sem );
+            }
+            else{
+                console.error("plz choice valid input !")
+            }
+            
+        }
+        console.log(study(name,dg,ask));
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

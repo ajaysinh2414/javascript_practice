@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple billing for shopes</title>
+    <script>
+        function bill(c_name, item_name, iprice, iquantity, total=iprice*iquantity, dis_per, dis=total*dis_per/100, final=total-dis )
+        {
+            if(iprice>=3000 && iquantity>=3)
+            {
+                
+                console.log("Customer Name is :"+c_name);
+                console.log("Item name is :"+item_name);
+                console.log("Item Price is :"+iprice);
+                console.log("Item Quantity is :"+iquantity);
+                console.log("total price is :"+total);
+                console.log("Given discount is :"+dis_per+"%"); 
+                console.log("Discount price :"+dis);
+                console.log("Grand total is :" +final);
+
+
+            }
+            
+           
+            else
+            {
+                console.log("Customer Name is :"+c_name);
+                console.log("Item name is :"+item_name);
+                console.log("Item Price is :"+iprice);
+                console.log("Item Quantity is :"+iquantity);
+                console.log("total price is :"+total);
+            }
+        }
+        let c_name = prompt("Enter Customer Name");
+        let item_name = prompt("Enter Item Name");
+        let iprice = parseInt(prompt("Enter Item Price"));
+        let iquantity = parseInt(prompt("Enter Item Quantity"));
+        let dis_per;
+        if(iprice==0 || iquantity==0)
+        {
+            console.log("Please Enter price & Quantity");
+        }
+        else if(iprice<=2999 || iquantity<=2)
+        {
+            bill(c_name, item_name, iprice, iquantity, total=iprice*iquantity);
+            console.log("**Special Discount buy more than Item=RS:3000 & Quantity=3** 10%");
+            console.log("**Special Discount buy more than Item=RS:7000 & Quantity=5** 20%");
+            console.log("**Special Discount buy more than Item RS:10000 & Quantity 5** 25%");
+            let add = prompt("do you want add more item (y/n)!!!");
+            if(add == "y")
+            {
+                // let n_in = prompt("Enter Item Name");
+                // let n_ip = parseInt(prompt("Enter Item Price"));
+                // let n_iq = parseInt(prompt("Enter Item Quantity"));
+                // bill(c_name, item_name, iprice=iprice+n_ip, iquantity+n_iq, total=iprice*iquantity);
+                alert("currently working in service");
+
+            }
+            else
+            {
+                console.log("thank you for shopping")
+            }
+         
+        }
+        else
+        {
+            dis_per  = parseInt(prompt("Enter Discount % :")); // discount as per offers..
+            bill(c_name, item_name, iprice, iquantity, total=iprice*iquantity, dis_per, dis=total*dis_per/100, final=total-dis );
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

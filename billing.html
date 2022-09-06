@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product bill</title>
+    <script>
+        
+        function purchase(name, p_name, price=1000, quantity=1, total=price*quantity, dis=total*10/100, final=total-dis)
+        {
+                if(price>1000 && quantity>1)
+                {
+                    console.log("Name is :" +name);
+                    console.log("product name is:" +p_name);
+                    console.log("price is:" +price);
+                    console.log("product Quantity is:" +quantity);
+                    console.log("total price is :" +total);
+                    if(total>=10000)
+                    {
+                        console.log("10% discount :"+dis);
+                        console.log("final price :" +final);
+
+                    }
+
+                }
+                else
+                {
+                    console.log("Name is :" +name);
+                    console.log("product name is:" +p_name);
+                    console.log("price is:" +price);
+                    console.log("product Quantity is:" +quantity);
+                    console.log("total price is :"+price*quantity);
+                    console.log("total price is :" +total);
+                }
+        } 
+        
+        let name = prompt("Enter Your name:");
+        let p_name = prompt("Enter product name:");
+        let y_price = prompt("Your New Price is above 1000 yes/no ?: ");
+        let q_no = prompt("Your Quantity is more than 1 yes/no ?: ");
+        if(y_price=="yes" && q_no=="yes")
+        {
+            let price = parseInt(prompt("Enter Your Price :"));
+            let quantity = parseInt(prompt("Enter Your Quantity:"));
+            purchase(name, p_name, price, quantity);
+        }
+        else
+        {
+            purchase(name, p_name);
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

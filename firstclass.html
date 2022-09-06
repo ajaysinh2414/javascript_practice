@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first class</title>
+    <script>
+        
+        class animal{
+            constructor(name, age) 
+            {
+                this.name = name;
+                this.age = age;
+            }
+            getInfo(){
+                return(`the name of the animal is ${this.name} and age is ${this.age}`)
+            }
+            makeSound(){
+                return(
+                    `some good sound `
+                )
+            }
+        }
+        const f1 = new animal('lion', 15);
+        console.log(f1);
+        console.log(f1.getInfo());
+        console.log(f1.makeSound());
+        
+       
+        
+        class dog extends animal{
+            constructor(name, age, breed){
+                super(name, age)
+                this.breed = breed
+            }
+            bark(){
+                return "wolf"
+            }
+            makeSound(){
+                return 'woof...';
+            }
+            
+        }
+        
+        class cat extends animal{
+            constructor(name, age, weight)
+            {
+                super (name, age)
+                this.weight = weight
+            }
+            type(){
+                return "bristish cat";
+            }
+            makeSound(){
+                return 'meow..';
+            }
+        }
+        const mdog = new dog("dog", 5, "lebrabor dog");
+        console.log(mdog.getInfo());
+        console.log("breed: "+mdog.breed);
+        console.log("bark: "+mdog.bark());
+        console.log("sound: "+mdog.makeSound());
+
+        const mcat = new cat("cat", 3, "3kg");
+        console.log(mcat.getInfo());
+        console.log("weight: "+mcat.weight);
+        console.log("type: "+mcat.type());
+        console.log("sound: "+mcat.makeSound());
+        // let weight;
+        //  class cat extends animal{
+        //     #weight;
+            
+        //     constructor(name, age, weight){
+                
+        //         super(name, age)
+        //         this.#weight = weight
+        //     }
+        //     getWeight(){
+        //         return this.#weight
+        //     }
+        //     setWeight(){
+        //         this.#weight=weight
+        //     }
+        // }
+         
+        // const mcat = new cat('whissy',5, '5kg')
+        // console.log(mcat)
+        // console.log(mcat.getWeight())
+        // mcat.setWeight('6kg')
+        // console.log(mcat.getWeight())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

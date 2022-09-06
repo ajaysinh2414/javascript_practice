@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop object </title>
+    <script>
+        const data = {
+            name : "ajaysinh",
+            age : 20,
+            course : "BCA"
+        }
+        let key;
+        let copy = data;
+        let add = prompt("Do You Want To Add in Data Object y/n");
+        if(add == "y"){
+        key = prompt("Enter key ");
+
+        copy[key]= prompt("Enter value");
+        console.log(data);
+            if(key in data)
+             {
+            console.log("you add new key: "+key);
+
+             }
+             else{
+            console.log(" You not add key");
+             }
+        }
+        else{
+            console.log(" Not add in");
+            console.log(copy)
+        }
+        
+        // if(data.salary === undefined)
+        // {
+        //     console.log("salary is not in data object");
+        // }
+        // else{
+        //     console.log("salary is in data object");
+        // }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

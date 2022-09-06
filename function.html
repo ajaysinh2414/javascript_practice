@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function practice</title>
+    <script>
+        // let a=10;
+        // let b=20;
+        // function show(a,b,c=3){
+        //     console.log(a+b);
+        //     return a+b+c;
+        // }
+        // console.log(show(10,2));
+        // let a,b;
+        // a =parseInt(prompt("enter number"));
+        // b =parseInt(prompt("enter number"));
+        // let q = prompt("enter +,-,*./");
+        // switch(q)
+        // {
+        //     case "+":
+        //     let add = a+b;
+        //     console.log(add);
+        //     break;
+
+        //     case "-":
+        //     let sub = a-b;
+        //     console.log(sub);
+        //     break;
+
+        //     case "*":
+        //     let mul = a*b;
+        //     console.log(mul);
+        //     break;
+
+        //     case "/":
+        //     let div = a/b;
+        //     console.log(div);
+        //     break;
+
+        //     default:
+        //         console.log("not number valid");
+        // }
+
+        function add(a,b){
+            return(a+b);
+        }
+        // add(10,20);
+
+        function sub(a,b){
+            return(a-b);
+        }
+        // sub(10,20);
+
+        function mul(a,b){
+            return(a*b);
+        }
+        // mul(10,20);
+
+        function div(a,b){
+            return(a/b);
+        }
+        // div(10,20);
+        a =parseInt(prompt("enter number"));
+        b =parseInt(prompt("enter number"));
+        let op = prompt("Enter Operation +,-,*,/");
+        switch(op)
+        {
+            case "+":
+            console.log(add(a,b));
+            break;
+
+            case "-":
+            console.log(sub(a,b));
+            break;
+
+            case "*":
+            console.log(mul(a,b));
+            break;
+
+            case "/":
+            console.log(div(a,b));
+             break;
+
+             default:
+                console.log("Not Valid choice");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

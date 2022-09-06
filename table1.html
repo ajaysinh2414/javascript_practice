@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <script>
+        let no1 = parseInt(prompt("enter first number "));
+        if(no1==0)
+        {
+            alert("enter positive number");
+        }
+        else{
+        let no2 = parseInt(prompt("enter second number "));
+        let i, j;
+        if(no2 == 0)
+        {
+            alert("enter proper number");
+        }
+        else if(no2<=no1)
+        {
+            alert("no1 is bigger than no2");
+        }
+        else
+        {
+            if(no1<no2)
+            {
+                for(i=no1 ; i<=no2 ; i++)
+                {
+                    for(j=1 ; j<=10 ; j++)
+                    {
+                        console.log(i+ "*" +j+ "=" +i*j);
+
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
